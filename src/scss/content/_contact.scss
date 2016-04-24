@@ -1,0 +1,48 @@
+#dv-contact{
+	
+	.dv-title{
+		width: 100%;
+		padding: 3% 0 3% 0;
+		text-align: center;
+	}
+}
+
+.form{
+	width: 40%;
+	display: flex;
+	align-text: center;
+	margin: 5rem auto;
+	
+
+	form{
+		//font-family: 'Domine', serif;
+		font-weight: 400;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+	label{
+		text-align: left;
+		margin: 1.5rem auto .5rem auto;
+		width: inherit;	
+	}
+
+	input, textarea{
+		font-family: 'Domine', serif;
+		width:100%;
+		border: 1px solid $secondaryColorOrange4;
+	}
+	
+	input{
+		min-height: 2rem;
+	}
+
+	textarea{
+		min-height: 10rem;
+	}
+	
+}
+

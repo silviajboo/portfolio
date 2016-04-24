@@ -11,17 +11,19 @@
 .dv-info{
 	width: 80%;
 	text-align: center;
-	margin: auto;
+	margin: 2rem auto;
 
 	/*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){
         width: 50%;
+        margin: 3rem auto;
     }
 
     /*Desktop*/
     @media only screen and (min-width: 1024px){
         width: 50%;
+        margin: 3rem auto;
     }
 }
 
@@ -52,7 +54,7 @@
 .skill{
 	width: 12rem;
 	height: 3rem;
-	margin: 1rem;	
+	margin: 1rem auto 1rem auto;	
 	border-bottom-width: 2px;
 	border-bottom-style: solid;
 	border-color: $primaryColorOrange;
@@ -61,13 +63,12 @@
 	/*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){
-        flex-direction: row;
+        
     }
 
     /*Desktop*/
     @media only screen and (min-width: 1024px){
-        flex-direction: row;
-        flex-wrap: wrap;
+        
     }
 }
 

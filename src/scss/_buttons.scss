@@ -2,14 +2,21 @@
 	text-align: center;
 	margin: auto;
 	padding: 1rem;
+	max-width: 14rem;
 
 
 	&-projects{
 		margin: 2.5rem auto;
 		width: auto;
-		max-width: 14rem;
 		border: 2px solid $secondaryColorOrange3;
 	}
 
+}
+
+.btn-send{
+	font-family: 'Montserrat', sans-serif;
+	border: 2px solid $secondaryColorPurple1;
+	margin: 2.5rem auto;
+	max-width: 10rem;
 }
 

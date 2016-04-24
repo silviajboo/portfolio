@@ -1,0 +1,56 @@
+#dv-projects{
+
+}
+
+.dv-projects-group{
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 2rem auto;
+
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	margin: 3rem auto;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	margin: 3rem auto;
+    }
+
+    a{
+
+    }
+}
+
+.project{
+	width: 50vw;
+	height: auto;
+	//margin: 1rem;
+	
+
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	width: 33.33vw;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	width: 33.33vw;
+    }
+
+    img{
+    	max-width: 100%;
+    	height: auto;
+    	background-size: cover;
+    	//float: left; 
+    	//max-width: 235px;
+    }
+}
+
