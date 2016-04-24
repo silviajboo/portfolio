@@ -1,0 +1,74 @@
+.dv-title{
+	width: 100%;
+	padding: 7% 0 7% 0;
+	text-align: center;
+}
+
+#dv-about-us{
+
+}
+
+.dv-info{
+	width: 80%;
+	text-align: center;
+	margin: auto;
+
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        width: 50%;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        width: 50%;
+    }
+}
+
+.dv-skills-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+	text-align: center;
+	margin: 2rem auto;
+
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 3rem auto;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 3rem auto;
+    }
+}
+
+.skill{
+	width: 12rem;
+	height: 3rem;
+	margin: 1rem;	
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-color: $primaryColorOrange;
+	border-radius: 2px;
+
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        flex-direction: row;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+

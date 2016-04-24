@@ -1,0 +1,15 @@
+.btn{
+	text-align: center;
+	margin: auto;
+	padding: 1rem;
+
+
+	&-projects{
+		margin: 2.5rem auto;
+		width: auto;
+		max-width: 14rem;
+		border: 2px solid $secondaryColorOrange3;
+	}
+
+}
+

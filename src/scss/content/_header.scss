@@ -1,0 +1,25 @@
+
+#dv-header{
+	background: url('../img/dream.svg') no-repeat;
+	background-position: top;
+	width: 100%;
+	height: 90vh;
+	padding-top: 6%;
+	position: relative;
+	overflow: auto;
+	//padding: 10%;
+}
+
+#dv-header-mini{
+	background-image: url('../img/littleDream.svg');
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 60%;
+	height: 70%;
+	overflow: auto;
+	margin: auto;
+	text-align: center;
+	padding: 1%;
+	//box-shadow: #B9B7B7 0px 3px 3px;
+	border: 1px solid $secondaryColorOrange4;
+}
