@@ -181,6 +181,7 @@ nav {
   max-width: 14rem;
   min-width: 10rem; }
   .btn-projects {
+    background-color: #ffffff;
     margin: 2.5rem auto;
     width: auto;
     border: 2px solid #F9998C;
@@ -211,7 +212,8 @@ nav {
   width: 100%;
   height: inherit;
   padding-left: 2rem;
-  padding-right: 2rem; }
+  padding-right: 2rem;
+  opacity: 1; }
 
 #dv-menu-logo {
   float: left; }
@@ -227,12 +229,22 @@ nav {
 #dv-header {
   background: url("../img/dream.png") no-repeat;
   background-position: center;
-  background-size: 150%;
+  background-size: 350%;
+  background-attachment: fixed;
   width: 100%;
   height: 90vh;
   padding-top: 6%;
   position: relative;
-  overflow: auto; }
+  overflow: auto;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #dv-header {
+      background-size: 200%; } }
+  @media only screen and (min-width: 1024px) {
+    #dv-header {
+      background-size: 150%; } }
 
 #dv-header-mini {
   background-image: url("../img/littleDream.png");
@@ -345,6 +357,8 @@ nav {
 .skill {
   width: 12rem;
   height: 3rem;
+  max-width: 20rem;
+  min-width: 12rem;
   margin: 1rem auto 1rem auto;
   border-bottom-width: 2px;
   border-bottom-style: solid;
@@ -353,6 +367,16 @@ nav {
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .skill {
+      -webkit-flex-basis: 28%;
+          -ms-flex-preferred-size: 28%;
+              flex-basis: 28%; } }
+  @media only screen and (min-width: 1024px) {
+    .skill {
+      -webkit-flex-basis: 28%;
+          -ms-flex-preferred-size: 28%;
+              flex-basis: 28%; } }
 
 .dv-projects-group {
   display: -webkit-box;
@@ -371,36 +395,81 @@ nav {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
   width: 100%;
+  max-width: 100%;
+  min-width: 100%;
   height: auto;
-  overflow: hidden;
   margin: 2rem auto;
+  margin-bottom: 4rem;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .dv-projects-group {
-      margin: 3rem auto; } }
+      margin: 3rem auto;
+      margin-bottom: 6rem; } }
   @media only screen and (min-width: 1024px) {
     .dv-projects-group {
-      margin: 3rem auto; } }
+      margin: 3rem auto;
+      margin-bottom: 6rem; } }
 
 .project {
-  width: 50vw;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .project {
-      width: 33.33vw; } }
+      -webkit-flex-basis: 33%;
+          -ms-flex-preferred-size: 33%;
+              flex-basis: 33%; } }
   @media only screen and (min-width: 1024px) {
     .project {
-      width: 33.33vw; } }
-  .project img {
-    max-width: 100%;
-    height: auto;
-    background-size: cover; }
+      -webkit-flex-basis: 33%;
+          -ms-flex-preferred-size: 33%;
+              flex-basis: 33%; } }
+
+.project img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  min-width: 100%;
+  border: none;
+  display: block; }
+
+.project:hover .project-info {
+  display: block; }
+
+.project-info {
+  display: none;
+  width: inherit;
+  height: inherit;
+  background-color: #000000;
+  opacity: .6;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.project-info > p {
+  opacity: 1;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center; }
 
 #dv-contact .dv-title {
   width: 100%;
@@ -410,7 +479,8 @@ nav {
 .dv-bg-contact {
   background-image: url("../img/banner_contact.png");
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  background-size: cover; }
 
 .form {
   width: 80%;
