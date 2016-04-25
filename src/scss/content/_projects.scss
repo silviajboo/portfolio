@@ -7,50 +7,88 @@
 	flex-direction: row;
     flex-wrap: wrap;
 	justify-content: center;
+	align-content: center;
 	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
 	height: auto;
-	overflow: hidden;
+	//overflow: hidden;
 	margin: 2rem auto;
+	margin-bottom: 4rem;
 
     /*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){
     	margin: 3rem auto;
+    	margin-bottom: 6rem;
     }
 
     /*Desktop*/
     @media only screen and (min-width: 1024px){
     	margin: 3rem auto;
+    	margin-bottom: 6rem;
     }
 
-    a{
-
-    }
 }
 
 .project{
-	width: 50vw;
-	height: auto;
-	//margin: 1rem;
-	
+	width: 100%;
+	height: 100%;
+	position: relative;
+	flex-basis: 50%;
+	//flex: 1;
+	flex-grow: 1;
 
 	/*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){
-    	width: 33.33vw;
+    	flex-basis: 33%;
     }
 
     /*Desktop*/
     @media only screen and (min-width: 1024px){
-    	width: 33.33vw;
+    	flex-basis: 33%;
     }
+}
 
-    img{
-    	max-width: 100%;
-    	height: auto;
-    	background-size: cover;
-    	//float: left; 
-    	//max-width: 235px;
-    }
+.project img{
+    height: auto;
+    width: auto;
+    //height: auto;
+    max-width: 100%;
+    min-width: 100%;
+    border: none;
+    //img por defecto son inline y generan line-height
+    //si lo pasamos a block -> solucionado
+    display: block;
+
+}
+
+.project:hover .project-info{
+	display: block;
+}
+
+.project-info{
+	display: none;
+	width: inherit;
+	height: inherit;
+	background-color: $primaryColorBlack;
+	opacity: .8;
+	position: absolute;
+		top: 0;
+		left: 0;
+}
+
+.project-info > p{
+	opacity: 1;
+	//margin: auto;
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+    	//left: 2%;
+    	//right: 2%;
+    	top: 40%;
+    //width: 90%;
+    text-align: center;
+    margin: auto;
 }
 

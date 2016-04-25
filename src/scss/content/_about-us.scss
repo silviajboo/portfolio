@@ -65,21 +65,24 @@
 .skill{
 	width: 12rem;
 	height: 3rem;
+    max-width: 20rem;
+    min-width: 12rem;
 	margin: 1rem auto 1rem auto;	
 	border-bottom-width: 2px;
 	border-bottom-style: solid;
 	border-color: $primaryColorOrange;
 	border-radius: 2px;
+    //flex-basis: 33%;
 
 	/*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){
-        
+        flex-basis: 28%;
     }
 
     /*Desktop*/
     @media only screen and (min-width: 1024px){
-        
+        flex-basis: 28%;
     }
 }
 
