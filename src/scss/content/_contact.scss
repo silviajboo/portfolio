@@ -7,15 +7,31 @@
 	}
 }
 
+.dv-bg-contact{
+	background-image: url('../img/banner_contact.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 .form{
-	width: 40%;
+	width: 80%;
 	display: flex;
 	align-text: center;
 	margin: 5rem auto;
+
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	width: 60%;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	width: 40%;
+    }
 	
 
 	form{
-		//font-family: 'Domine', serif;
 		font-weight: 400;
 		width: 100%;
 		display: flex;
@@ -24,23 +40,26 @@
 
 	}
 
-	label{
+	.label-contact{
 		text-align: left;
 		margin: 1.5rem auto .5rem auto;
 		width: inherit;	
 	}
 
-	input, textarea{
-		font-family: 'Domine', serif;
-		width:100%;
+	.input, .textarea{
+		width: 100%;
 		border: 1px solid $secondaryColorOrange4;
 	}
+	.txt-alternate2{
+		font-family: 'Domine', serif;
+	}
 	
-	input{
+
+	.input{
 		min-height: 2rem;
 	}
 
-	textarea{
+	.textarea{
 		min-height: 10rem;
 	}
 	

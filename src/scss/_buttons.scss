@@ -3,20 +3,54 @@
 	margin: auto;
 	padding: 1rem;
 	max-width: 14rem;
-
+	min-width: 10rem;
 
 	&-projects{
 		margin: 2.5rem auto;
 		width: auto;
 		border: 2px solid $secondaryColorOrange3;
+		transition:         0.08s ease-in;
+	}
+	&-projects:hover{
+		background-color: $secondaryColorOrange2;
+		border: 2px solid $primaryColorWhite;
+		color: $primaryColorWhite;
 	}
 
+	&-send{
+		font-family: 'Montserrat', sans-serif;
+		border: 2px solid $secondaryColorOrange4;
+		margin: 2.5rem auto;
+		max-width: 10rem;
+		transition:         0.08s ease-in;
+	}
+	&-send:hover{
+		background-color: $primaryColorWhite;
+		color: $primaryColorOrange;
+		border: 2px solid $secondaryColorOrange1;
+	}
+
+	// &-send:before {
+	//   content: "";
+	//   position: absolute;
+	//   background: #383736;
+	//   bottom: 0;
+	//   left: 0;
+	//   right: 0;
+	//   top: 100%;
+	//   z-index: -1;
+	//   -webkit-transition: top 0.09s ease-in;
+	// }
+
+	// &-send:hover:before {
+	//   top: 0;
+	// }
 }
 
-.btn-send{
-	font-family: 'Montserrat', sans-serif;
-	border: 2px solid $secondaryColorPurple1;
-	margin: 2.5rem auto;
-	max-width: 10rem;
+	//le damos sensación de presionar botón
+.btn:active {
+	box-shadow: $colorShadowBtn 0px 1px 1px;
+	position: relative;
+	top: 1px;
 }
 

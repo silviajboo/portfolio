@@ -1,7 +1,8 @@
 
 #dv-header{
-	background: url('../img/dream.svg') no-repeat;
-	background-position: top;
+	background: url('../img/dream.png') no-repeat;
+	background-position: center;
+	background-size: 150%;
 	width: 100%;
 	height: 90vh;
 	padding-top: 6%;
@@ -11,15 +12,44 @@
 }
 
 #dv-header-mini{
-	background-image: url('../img/littleDream.svg');
+	background-image: url('../img/littleDream.png');
 	background-repeat: no-repeat;
-	background-position: left top;
-	width: 60%;
-	height: 70%;
+	background-position: center;
+	background-size: cover;
+	width: 80%;
+	height: 60%;
 	overflow: auto;
 	margin: auto;
 	text-align: center;
 	padding: 1%;
+	margin-top: 10%;
 	//box-shadow: #B9B7B7 0px 3px 3px;
 	border: 1px solid $secondaryColorOrange4;
+
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+       	width: 60%;
+		height: 70%;
+		margin-top: auto;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+       	width: 60%;
+		height: 70%;
+		margin-top: auto;
+    } 
+
+    .txt-align-left{
+    	text-align: left;
+    	margin-left: 15%;
+    	opacity: .6;
+    }
+
+    .txt-align-right{
+    	text-align: right;
+    	margin-right: 15%;
+    	opacity: .6;
+    }
 }
