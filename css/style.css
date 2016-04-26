@@ -672,6 +672,9 @@ nav {
     text-align: left;
     margin: 1.5rem auto .5rem auto;
     width: inherit; }
+  .form label.error {
+    color: #DB2020;
+    display: none; }
   .form .input, .form .textarea {
     width: 100%;
     border: 1px solid #F8A69B; }

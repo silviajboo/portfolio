@@ -135,16 +135,24 @@
 				<h2 class="c-txt-secondary1-2">&lt;¡Hola!&gt;</h2>
 			</div>
 
-			<div class="form">
+			<div class="form" action="php/sendEmail.php" method="post">
 				<form>
 					<label for"name" class="label-contact">Nombre</label>
-					<input type="text" placeholder="Escribe tu nombre" class="input txt-alternate2">
+					<input type="text" name="name" placeholder="Escribe tu nombre" class="input txt-alternate2">
+					<label class="error">El nombre debe contener entre 3 y 20 caracteres</label>
+
 					<label for"email" class="label-contact">Correo electrónico</label>
-					<input type="text" placeholder="Escribe tu correo electrónico" class="input txt-alternate2">
+					<input type="text" name="email" placeholder="Escribe tu correo electrónico" class="input txt-alternate2">
+					<label class="error">El correo electrónico debe contener el dominio</label>
+
 					<label for"subject" class="label-contact">Asunto</label>
-					<input type="text" placeholder="Escribe el asunto" class="input txt-alternate2">
-					<label for"msg" class="label-contact">Mensaje</label>
+					<input type="text" name="subject" placeholder="Escribe el asunto" class="input txt-alternate2">
+					<label class="error">El asunto debe contener entre 4 y 50 caracteres</label>
+
+					<label for"usr_msg" class="label-contact">Mensaje</label>
 					<textarea id="text" name="user_msg" placeholder="Escríbenos tu idea, duda, aclaración o un simple &lt;¡Hola!&gt;" class="textarea txt-alternate2"></textarea>
+					<label class="error">El mensaje debe contener entre 10 y 200 caracteres</label>
+
 					<input type="submit" class="btn btn-send c-txt-white c-bg-primary1 txt-uppercase" value="enviar">
 				</form>
 			</div>
@@ -179,6 +187,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="js/scroll.js"></script>
 	<script src="js/burguer-menu.js"></script>
+	<script src="js/validate.js"></script>
 </body>
 
 </html>
