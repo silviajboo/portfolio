@@ -295,7 +295,16 @@ nav {
   width: 45px;
   height: 40px;
   position: relative;
-  margin: 10px 10px; }
+  margin: 5px 10px;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .btn-anim-three {
+      margin: 12px 12px; } }
+  @media only screen and (min-width: 1024px) {
+    .btn-anim-three {
+      margin: 12px 12px; } }
 
 .btn-anim-three span {
   position: absolute;
