@@ -3,8 +3,12 @@
 	height: inherit;
 	padding-left: 2rem;
 	padding-right: 2rem;
-	//position: fixed;
+	position: fixed;
+		top: 0;
+		left: 0;
 	opacity: 1;
+	z-index:999;
+	margin-bottom: 30rem;
 }
 
 #dv-menu-logo{
@@ -17,8 +21,130 @@
 	padding-right: 2rem;
 }
 
-#dv-menu-container li{
+.nav-desktop li{
 	display: inline-block;
 	padding: 1rem;
 }
 
+/* NAV-MOBILE */
+.nav-mobile {
+  position: fixed;
+  height: auto;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: #fff;
+  //box-shadow: 0px 0px 15px rgba(0,0,0,.6);
+  box-sizing: border-box;
+  transition: .5s ease-in-out;
+  color: #000;
+  z-index: 1;
+}
+
+.nav-mobile.closed{
+  right: -100%;
+}
+
+.nav-mobile .btn-anim-three{
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+.nav-mobile .nav {
+  padding: 0;
+  margin-top: 50px;
+}
+
+.nav-mobile .nav>li {
+  list-style: none;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.nav-mobile .nav>li:first-child {
+  margin-top: 5rem;
+}
+
+/* animated icons for nav-mobile */
+.btn-anim-three{
+    background-color: $secondaryColorOrange2;
+    display: inline-block;
+    width: 45px;
+    height: 40px;
+    position: relative;
+    margin: 10px 10px;
+}
+
+.btn-anim-three span{
+    position: absolute;
+    height: 3px;
+    border-radius: 2px;
+    background: #fff;
+    transition: all .8s ease;
+}
+
+.btn-anim-three span.one{
+    width: 25px;
+    top: 10px;
+    left: 9.5px;
+}
+.btn-anim-three span.two{
+    width: 25px;
+    top: 19px;
+    left: 9.5px;
+}
+
+.btn-anim-three span.three{
+    width: 25px;
+    top: 28px;
+    left: 9.5px;
+}
+
+.btn-anim-three.closed span.one{
+    width: 25px;
+    top: 19px;
+    left: 9.5px;
+    transform: rotate(225deg);
+}
+
+.btn-anim-three.closed span.two{
+    width: 0px;
+    left: 20px;
+}
+.btn-anim-three.closed span.three{
+    width: 25px;
+    top: 19px;
+    left: 9.5px;
+    transform: rotate(-225deg);
+}
+.menu-burguer {
+	display: block;
+
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+       display: block;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+       	display: none;
+    } 
+}
+
+.menu-desktop {
+	display: none;
+
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+       display: none;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+       	display: block;
+    } 
+}

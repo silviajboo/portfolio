@@ -1,4 +1,8 @@
+#dv-container{
+	position: relative;
+		//top: 5rem;
 
+}
 #dv-header{
 	background: url('../img/dream.png') no-repeat;
 	background-position: center;
@@ -8,7 +12,9 @@
 	height: 90vh;
 	padding-top: 6%;
 	position: relative;
+		top: 5rem;
 	overflow: auto;
+
 	//padding: 10%;
 	/*MEDIA QUERIES*/
     /*Tablet*/
@@ -36,6 +42,8 @@
 	margin-top: 10%;
 	//box-shadow: #B9B7B7 0px 3px 3px;
 	border: 1px solid $secondaryColorOrange4;
+	position: relative;
+		top:1rem;
 
 	/*MEDIA QUERIES*/
     /*Tablet*/

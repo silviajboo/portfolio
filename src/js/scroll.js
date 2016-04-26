@@ -8,3 +8,10 @@ $('a[href^="#"]').on('click',function (e) {
             window.location.hash = target;
         });
     });
+
+$(document).ready(function() {
+        $( ".btn-anim-three" ).on( "click", function() {
+          $(this).toggleClass( "closed" );
+          $('.nav-mobile').toggleClass( "closed" );
+        });
+ 	});

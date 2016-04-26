@@ -182,7 +182,7 @@ nav {
   min-width: 10rem; }
   .btn-projects {
     background-color: #ffffff;
-    margin: 2.5rem auto;
+    margin: 3rem auto;
     width: auto;
     border: 2px solid #F9998C;
     -webkit-transition: 0.08s ease-in;
@@ -213,7 +213,12 @@ nav {
   height: inherit;
   padding-left: 2rem;
   padding-right: 2rem;
-  opacity: 1; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 999;
+  margin-bottom: 30rem; }
 
 #dv-menu-logo {
   float: left; }
@@ -222,9 +227,121 @@ nav {
   float: right;
   padding-right: 2rem; }
 
-#dv-menu-container li {
+.nav-desktop li {
   display: inline-block;
   padding: 1rem; }
+
+/* NAV-MOBILE */
+.nav-mobile {
+  position: fixed;
+  height: auto;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  color: #000;
+  z-index: 1; }
+
+.nav-mobile.closed {
+  right: -100%; }
+
+.nav-mobile .btn-anim-three {
+  position: fixed;
+  top: 1rem;
+  right: 1rem; }
+
+.nav-mobile .nav {
+  padding: 0;
+  margin-top: 50px; }
+
+.nav-mobile .nav > li {
+  list-style: none;
+  margin: auto;
+  text-align: center;
+  padding: 1rem; }
+
+.nav-mobile .nav > li:first-child {
+  margin-top: 5rem; }
+
+/* animated icons for nav-mobile */
+.btn-anim-three {
+  background-color: #F98C7D;
+  display: inline-block;
+  width: 45px;
+  height: 40px;
+  position: relative;
+  margin: 10px 10px; }
+
+.btn-anim-three span {
+  position: absolute;
+  height: 3px;
+  border-radius: 2px;
+  background: #fff;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease; }
+
+.btn-anim-three span.one {
+  width: 25px;
+  top: 10px;
+  left: 9.5px; }
+
+.btn-anim-three span.two {
+  width: 25px;
+  top: 19px;
+  left: 9.5px; }
+
+.btn-anim-three span.three {
+  width: 25px;
+  top: 28px;
+  left: 9.5px; }
+
+.btn-anim-three.closed span.one {
+  width: 25px;
+  top: 19px;
+  left: 9.5px;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg); }
+
+.btn-anim-three.closed span.two {
+  width: 0px;
+  left: 20px; }
+
+.btn-anim-three.closed span.three {
+  width: 25px;
+  top: 19px;
+  left: 9.5px;
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg); }
+
+.menu-burguer {
+  display: block;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .menu-burguer {
+      display: block; } }
+  @media only screen and (min-width: 1024px) {
+    .menu-burguer {
+      display: none; } }
+
+.menu-desktop {
+  display: none;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .menu-desktop {
+      display: none; } }
+  @media only screen and (min-width: 1024px) {
+    .menu-desktop {
+      display: block; } }
+
+#dv-container {
+  position: relative; }
 
 #dv-header {
   background: url("../img/dream.png") no-repeat;
@@ -235,6 +352,7 @@ nav {
   height: 90vh;
   padding-top: 6%;
   position: relative;
+  top: 5rem;
   overflow: auto;
   /*MEDIA QUERIES*/
   /*Tablet*/
@@ -259,6 +377,8 @@ nav {
   padding: 1%;
   margin-top: 10%;
   border: 1px solid #F8A69B;
+  position: relative;
+  top: 1rem;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
@@ -285,6 +405,9 @@ nav {
   width: 100%;
   padding: 7% 5% 7% 5%;
   text-align: center;
+  position: relative;
+  top: 5rem;
+  margin-bottom: 8rem;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }

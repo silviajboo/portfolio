@@ -20,3 +20,33 @@ $primaryColorWhite: #ffffff;
 
 //shadow colors
 $colorShadowBtn: #B9B7B7;
+
+//PROJECTS: listado de imágenes a asignar
+$listImgProjects: (
+	url(../img/CalaGemmaMac.png), 
+	url(../img/goPicnicMobile.png), 
+	url(../img/fmStCeloniLogo.png), 
+	url(../img/fmSantCeloni.png), 
+	url(../img/farmonyLogo.png), 
+	url(../img/kidscode.png));
+
+//PROJECTS: listado de urls a asignar en los hrefs
+$listHrefProjects: (
+	'http://aulacalagemma.com', 
+	'https://play.google.com/store/apps/details?id=boogastudio.merendero',
+	'https://play.google.com/store/apps/details?id=boogastudio.festamajor',
+	'https://play.google.com/store/apps/details?id=boogastudio.festamajor',
+	'https://play.google.com/store/apps/details?id=boogastudio.farmony',
+	'http://silviajboo.github.io/kidscode');
+
+//PROJECTS: listado de textos a asignar en las descripciones de los proyectos
+$listDescriptionProjects: (
+	'Probando probando...', 
+	'Probando probando...',
+	'Probando probando...', 
+	'Probando probando...',
+	'Probando probando...', 
+	'Proyecto para Master en Diseño Web de BAU por el equipo KidsCode. Juego online para enseñar a los niños pensamiento computacional a través de minijuegos educativos');
+
+
+
