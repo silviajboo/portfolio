@@ -5,14 +5,25 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-size: 16px;
-  line-height: 1.5rem;
+  font-size: 14px;
+  line-height: 1.3rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
   max-width: 100%;
   min-width: 320px;
-  height: auto; }
+  height: auto;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+      font-size: 16px;
+      line-height: 1.5rem; } }
+  @media only screen and (min-width: 1024px) {
+    body {
+      font-size: 16px;
+      line-height: 1.5rem; } }
 
 .body-alternates {
   font-family: 'Montserrat Alternates', sans-serif; }
@@ -24,9 +35,20 @@ a {
 p {
   font-family: 'Domine', serif;
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  display: block; }
+  font-size: .9rem;
+  line-height: 1.3rem;
+  display: block;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem; } }
+  @media only screen and (min-width: 1024px) {
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem; } }
 
 h1 {
   font-size: 2rem;
