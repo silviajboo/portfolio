@@ -216,7 +216,7 @@ nav {
   .btn-send {
     font-family: 'Montserrat', sans-serif;
     border: 2px solid #F8A69B;
-    margin: 2.5rem auto;
+    margin: 3rem auto 2rem auto;
     max-width: 10rem;
     -webkit-transition: 0.08s ease-in;
     transition: 0.08s ease-in; }
@@ -695,11 +695,12 @@ nav {
             align-items: center; }
   .form .label-contact {
     text-align: left;
-    margin: 1.5rem auto .5rem auto;
+    margin: 2rem auto .5rem auto;
     width: inherit; }
   .form label.error {
     color: #DB2020;
-    display: none; }
+    display: none;
+    height: 0; }
   .form .input, .form .textarea {
     width: 100%;
     border: 1px solid #F8A69B; }
@@ -755,7 +756,7 @@ nav {
   .social-net img {
     width: 90%;
     height: auto;
-    border: 1px solid #F8A69B;
+    border: 2px solid #F8A69B;
     border-radius: 50%;
     /*MEDIA QUERIES*/
     /*Tablet*/
@@ -766,6 +767,8 @@ nav {
     @media only screen and (min-width: 1024px) {
       .social-net img {
         width: 100%; } }
+  .social-net img:hover {
+    background-color: #A77796; }
 
 .copyright {
   margin: 1rem; }
