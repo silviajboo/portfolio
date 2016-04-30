@@ -2,11 +2,10 @@
 if(isset($_POST['submit'])) {
     $ver = floatval(phpversion());
 
-
     $name = HTMLSPECIALCHARS($_POST['name']);
     $msg = HTMLSPECIALCHARS($_POST['user_msg']);
     $FromEmail = HTMLSPECIALCHARS($_POST['email']);
-	$subject = HTMLSPECIALCHARS($_POST['subject']);
+    $subject = HTMLSPECIALCHARS($_POST['subject']);
     
     $headers = '';
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
@@ -23,9 +22,9 @@ if(isset($_POST['submit'])) {
           <title>Message</title> 
        </head>
        <body>
-          <p><strong>Full name:</strong> ' . $personal . '</p>
+          <p><strong>Full name:</strong> ' . $name . '</p>
           <p><strong>E-mail:</strong> ' . $FromEmail . '</p>
-		  <p><strong>Website:</strong> ' . $website . '</p>
+      <p><strong>Subject:</strong> ' . $subject . '</p>
           <p><strong>Message:</strong> ' . $msg . '</p>
        </body>
        </html>';

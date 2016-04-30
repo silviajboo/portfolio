@@ -245,6 +245,9 @@ nav {
 #dv-menu-logo {
   float: left; }
 
+#dv-menu-logo-burguer {
+  padding-left: 1rem; }
+
 #dv-menu-container {
   float: right;
   padding-right: 2rem; }
@@ -261,6 +264,7 @@ nav {
   right: 0;
   width: 100%;
   background: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
   box-sizing: border-box;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
@@ -284,9 +288,6 @@ nav {
   margin: auto;
   text-align: center;
   padding: 1rem; }
-
-.nav-mobile .nav > li:first-child {
-  margin-top: 5rem; }
 
 /* animated icons for nav-mobile */
 .btn-anim-three {
@@ -603,7 +604,7 @@ nav {
   border: none;
   display: block; }
 
-.project:hover .project-info {
+.project:hover .project-info, .project:active .project_info {
   display: block; }
 
 .project-info {
@@ -616,13 +617,37 @@ nav {
   top: 0;
   left: 0; }
 
-.project-info > p {
+.project-info-text {
   opacity: 1;
-  font-family: 'Montserrat', sans-serif;
   position: absolute;
-  top: 40%;
+  width: 80%;
+  height: auto;
+  margin: 0 10%;
   text-align: center;
-  margin: auto; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .project-info-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .7rem;
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    /*Desktop*/ }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .project-info-text p {
+        font-size: .8rem; } }
+    @media only screen and (min-width: 1024px) {
+      .project-info-text p {
+        font-size: 1rem; } }
 
 #dv-contact .dv-title {
   width: 100%;
@@ -704,11 +729,29 @@ nav {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 40%;
-  margin: auto; }
+  width: 80%;
+  margin: auto;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .social-networks {
+      width: 40%; } }
+  @media only screen and (min-width: 1024px) {
+    .social-networks {
+      width: 40%; } }
 
 .social-net {
-  margin: .1rem; }
+  margin: 1%;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .social-net {
+      margin: 3%; } }
+  @media only screen and (min-width: 1024px) {
+    .social-net {
+      margin: 3%; } }
   .social-net img {
     width: 90%;
     height: auto;
@@ -719,10 +762,10 @@ nav {
     /*Desktop*/ }
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
       .social-net img {
-        width: 50%; } }
+        width: 90%; } }
     @media only screen and (min-width: 1024px) {
       .social-net img {
-        width: 50%; } }
+        width: 100%; } }
 
 .copyright {
   margin: 1rem; }
