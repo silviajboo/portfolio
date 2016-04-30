@@ -454,6 +454,74 @@ nav {
     text-align: right;
     margin-right: 15%;
     opacity: .6; }
+  #dv-header-mini .header-mini-txt {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+            animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: 3.5s;
+            animation-duration: 3.5s; }
+  #dv-header-mini .header-mini-txt.first {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s; }
+  #dv-header-mini .header-mini-txt.second {
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s; }
+  #dv-header-mini .header-mini-txt1 {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: slidein-left;
+            animation-name: slidein-left; }
+  #dv-header-mini .header-mini-txt2 {
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-name: slidein-right;
+            animation-name: slidein-right; }
+
+@-webkit-keyframes slidein-left {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 15%;
+    width: 100%; } }
+
+@keyframes slidein-left {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 15%;
+    width: 100%; } }
+
+@-webkit-keyframes slidein-right {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 15%;
+    width: 70%; } }
+
+@keyframes slidein-right {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 15%;
+    width: 70%; } }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .dv-title {
   width: 100%;
@@ -630,7 +698,6 @@ nav {
   display: block; }
 
 .project-info {
-  display: none;
   width: inherit;
   height: inherit;
   background-color: #000000;
