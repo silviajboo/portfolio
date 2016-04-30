@@ -47,6 +47,11 @@
 		width: inherit;	
 	}
 
+	label.error{
+        color: $colorTxtError;
+        display: none;
+	}
+
 	.input, .textarea{
 		width: 100%;
 		border: 1px solid $secondaryColorOrange4;

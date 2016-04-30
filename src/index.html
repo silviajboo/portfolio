@@ -20,12 +20,16 @@
 					<ul>
 						<li><a href="#dv-about-us">nosotros</a></li>
 						<li><a href="#dv-projects">proyectos</a></li>
-						<li><a href="#dv-contact">contacto</a></li>
+						<li><a href="#dv-contact">contáctanos</a></li>
 					</ul>
 				</nav>
 			</div>
 
 			<div class="nav-mobile menu-burguer closed">
+				<div id="dv-menu-logo-burguer">
+					<a href="#dv-container"><h1>boogastudio</h1></a>
+				</div>
+
 				<a class="btn-anim-three">
 					<span class="one"></span>
 					<span class="two"></span>
@@ -35,7 +39,7 @@
 					<ul class="nav" role="sidebar">
 						<li><a href="#dv-about-us">nosotros</a></li>
 						<li><a href="#dv-projects">proyectos</a></li>
-						<li><a href="#dv-contact">contacto</a></li>
+						<li><a href="#dv-contact">contáctanos</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -91,37 +95,49 @@
 				<a href="http://aulacalagemma.com" target="_blank" alt="Link web aulacalagemma.com" class="project">
 					<img src="img/CalaGemmaMac.png">
 					<div class="project-info">
-						<p class="c-txt-white">Probando probando...</p>
+						<div class="project-info-text">
+							<p class="c-txt-white">Web per l'Aula d'estudi Ca la Gemma on mostra els serveis que ofereixen</p>
+						</div>
 					</div>
 				</a>
 				<a href="https://play.google.com/store/apps/details?id=boogastudio.merendero" target="_blank" class="project">
 					<img src="img/goPicnicMobile.png">
 					<div class="project-info">
-						<p class="c-txt-white">Probando probando...</p>
+						<div class="project-info-text">
+							<p class="c-txt-white">App Android donde localizar merenderos por zona, servicios, distancia...</p>
+						</div>
 					</div>
 				</a>
 				<a href="https://play.google.com/store/apps/details?id=boogastudio.festamajor" target="_blank" class="project">
 					<img src="img/fmStCeloniLogo.png">
 					<div class="project-info">
-						<p class="c-txt-white">Probando probando...</p>
+						<div class="project-info-text">
+							<p class="c-txt-white">App android con información sobre el programa de la Fiesta Mayor de Sant Celoni</p>
+						</div>
 					</div>
 				</a>
 				<a href="https://play.google.com/store/apps/details?id=boogastudio.festamajor" target="_blank" class="project">
 					<img src="img/fmSantCeloni.png">
 					<div class="project-info">
-						<p class="c-txt-white">Probando probando...</p>
+						<div class="project-info-text">
+							<p class="c-txt-white">App android con información sobre el programa de la Fiesta Mayor de Sant Celoni</p>
+						</div>
 					</div>
 				</a>
 				<a href="https://play.google.com/store/apps/details?id=boogastudio.farmony" target="_blank" class="project">
 					<img src="img/farmonyLogo.png">
 					<div class="project-info">
-						<p class="c-txt-white">Probando probando...</p>
+						<div class="project-info-text">
+							<p class="c-txt-white">Un divertido juego educativo para niños en edad preescolar y bebés</p>
+						</div>
 					</div>
 				</a>
-				<a href="http://silviajboo.github.io/kidscode" class="project">
+				<a href="http://silviajboo.github.io/kidscode" target="_blank" class="project">
 					<img src="img/kidscode.png">
 					<div class="project-info">
-						<p class="c-txt-white">Proyecto para Master en Diseño Web de BAU por el equipo KidsCode. <br>Juego online para enseñar a los niños pensamiento computacional a través de minijuegos educativos</p>
+						<div class="project-info-text">
+							<p class="c-txt-white">Proyecto para Master en Diseño Web de BAU por el equipo KidsCode. Juego online para enseñar a los niños pensamiento computacional a través de minijuegos educativos</p>
+						</div>
 					</div> 
 				</a>
 			</div>
@@ -136,15 +152,23 @@
 			</div>
 
 			<div class="form">
-				<form>
+				<form action="php/sendEmail.php" method="post">
 					<label for"name" class="label-contact">Nombre</label>
-					<input type="text" placeholder="Escribe tu nombre" class="input txt-alternate2">
+					<input type="text" name="name" placeholder="Escribe tu nombre" class="input txt-alternate2">
+					<label class="error">El nombre debe contener entre 3 y 20 caracteres</label>
+
 					<label for"email" class="label-contact">Correo electrónico</label>
-					<input type="text" placeholder="Escribe tu correo electrónico" class="input txt-alternate2">
+					<input type="text" name="email" placeholder="Escribe tu correo electrónico" class="input txt-alternate2">
+					<label class="error">El correo electrónico debe contener el dominio</label>
+
 					<label for"subject" class="label-contact">Asunto</label>
-					<input type="text" placeholder="Escribe el asunto" class="input txt-alternate2">
-					<label for"msg" class="label-contact">Mensaje</label>
+					<input type="text" name="subject" placeholder="Escribe el asunto" class="input txt-alternate2">
+					<label class="error">El asunto debe contener entre 4 y 50 caracteres</label>
+
+					<label for"usr_msg" class="label-contact">Mensaje</label>
 					<textarea id="text" name="user_msg" placeholder="Escríbenos tu idea, duda, aclaración o un simple &lt;¡Hola!&gt;" class="textarea txt-alternate2"></textarea>
+					<label class="error">El mensaje debe contener entre 10 y 200 caracteres</label>
+
 					<input type="submit" class="btn btn-send c-txt-white c-bg-primary1 txt-uppercase" value="enviar">
 				</form>
 			</div>
@@ -157,16 +181,16 @@
 				<!-- <div class="contact"> boogastudio@gmail.com</div> -->
 				<div class="social-networks">
 					<a href="https://www.facebook.com/boogastudio" target="_blank" class="social-net">
-						<img src="img/facebook.png">
+						<img src="img/facebook.svg">
 					</a>
 					<a href="https://twitter.com/boogastudio" target="_blank" class="social-net">
-						<img src="img/twitter.png">
+						<img src="img/twitter.svg">
 					</a>
 					<a href="https://www.linkedin.com/in/silvia-jimenez-boo-04988b41" target="_blank" class="social-net">
-						<img src="img/linkedin.png">
+						<img src="img/linkedin_boo.svg">
 					</a>
 					<a href="https://www.linkedin.com/in/jonathan-garcía-fernández-94b827b3" target="_blank" class="social-net">
-						<img src="img/linkedin.png">
+						<img src="img/linkedin_ga.svg">
 					</a>
 
 				</div>
@@ -179,6 +203,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="js/scroll.js"></script>
 	<script src="js/burguer-menu.js"></script>
+	<script src="js/validate.js"></script>
 </body>
 
 </html>
