@@ -1,21 +1,19 @@
 #dv-container{
 	position: relative;
-		//top: 5rem;
+}
 
-	}
-	#dv-header{
-		background: url('../img/dream.png') no-repeat;
-		background-position: center;
-		background-size: 350%;
-		background-attachment: fixed;
-		width: 100%;
-		height: 90vh;
-		padding-top: 6%;
-		position: relative;
-		top: 5rem;
-		overflow: auto;
+#dv-header{
+	background: url('../img/dream.png') no-repeat;
+	background-position: center;
+	background-size: 350%;
+	background-attachment: fixed;
+	width: 100%;
+	height: 90vh;
+	padding-top: 6%;
+	position: relative;
+	top: 5rem;
+	overflow: auto;
 
-	//padding: 10%;
 	/*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){

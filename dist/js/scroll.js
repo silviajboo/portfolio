@@ -9,3 +9,16 @@ $('a[href^="#"]').on('click',function (e) {
         });
     });
 
+
+
+// $('#dv-about-us').waypoint(function(direction) {
+//   $("#dv-menu").addClass("scrolled");
+//   }, {
+//     offset: 116 
+// });
+
+// $('#dv-container').waypoint(function(direction) {
+//   $("#dv-menu").removeClass("scrolled");
+//   }, {
+//     offset: -316 
+// });
