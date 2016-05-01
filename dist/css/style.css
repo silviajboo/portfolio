@@ -223,14 +223,14 @@ nav {
   margin: auto;
   padding: 1rem;
   max-width: 14rem;
-  min-width: 10rem; }
+  min-width: 10rem;
+  -webkit-transition: .4s ease-in;
+  transition: .4s ease-in; }
   .btn-projects {
     background-color: #ffffff;
     margin: 3rem auto;
     width: auto;
-    border: 2px solid #F9998C;
-    -webkit-transition: 0.08s ease-in;
-    transition: 0.08s ease-in; }
+    border: 2px solid #F9998C; }
   .btn-projects:hover {
     background-color: #F98C7D;
     border: 2px solid #ffffff;
@@ -454,6 +454,74 @@ nav {
     text-align: right;
     margin-right: 15%;
     opacity: .6; }
+  #dv-header-mini .header-mini-txt {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+            animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: 3.5s;
+            animation-duration: 3.5s; }
+  #dv-header-mini .header-mini-txt.first {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s; }
+  #dv-header-mini .header-mini-txt.second {
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s; }
+  #dv-header-mini .header-mini-txt1 {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: slidein-left;
+            animation-name: slidein-left; }
+  #dv-header-mini .header-mini-txt2 {
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-name: slidein-right;
+            animation-name: slidein-right; }
+
+@-webkit-keyframes slidein-left {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 15%;
+    width: 100%; } }
+
+@keyframes slidein-left {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 15%;
+    width: 100%; } }
+
+@-webkit-keyframes slidein-right {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 15%;
+    width: 70%; } }
+
+@keyframes slidein-right {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 15%;
+    width: 70%; } }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .dv-title {
   width: 100%;
@@ -641,23 +709,14 @@ nav {
 
 .project-info-text {
   opacity: 1;
-  position: absolute;
   width: 80%;
   height: auto;
   margin: 0 10%;
   text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
   .project-info-text p {
     font-family: 'Montserrat', sans-serif;
     font-size: .7rem;
@@ -723,6 +782,8 @@ nav {
     color: #DB2020;
     display: none;
     height: 0; }
+  .form input.btn-send {
+    text-decoration: none; }
   .form .input, .form .textarea {
     width: 100%;
     border: 1px solid #F8A69B; }
@@ -780,6 +841,8 @@ nav {
     height: auto;
     border: 2px solid #F8A69B;
     border-radius: 50%;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
     /*MEDIA QUERIES*/
     /*Tablet*/
     /*Desktop*/ }
@@ -791,6 +854,32 @@ nav {
         width: 100%; } }
   .social-net img:hover {
     background-color: #A77796; }
+
+.social-net:hover {
+  -webkit-animation: preloader_5 .8s linear;
+          animation: preloader_5 .8s linear; }
+
+@-webkit-keyframes preloader_5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes preloader_5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
 
 .copyright {
   margin: 1rem; }

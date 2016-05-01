@@ -2,29 +2,29 @@
 	position: relative;
 		//top: 5rem;
 
-}
-#dv-header{
-	background: url('../img/dream.png') no-repeat;
-	background-position: center;
-	background-size: 350%;
-	background-attachment: fixed;
-	width: 100%;
-	height: 90vh;
-	padding-top: 6%;
-	position: relative;
+	}
+	#dv-header{
+		background: url('../img/dream.png') no-repeat;
+		background-position: center;
+		background-size: 350%;
+		background-attachment: fixed;
+		width: 100%;
+		height: 90vh;
+		padding-top: 6%;
+		position: relative;
 		top: 5rem;
-	overflow: auto;
+		overflow: auto;
 
 	//padding: 10%;
 	/*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){
-       background-size: 200%;
+    	background-size: 200%;
     }
 
     /*Desktop*/
     @media only screen and (min-width: 1024px){
-       	background-size: 150%;
+    	background-size: 150%;
     } 
 }
 
@@ -43,21 +43,21 @@
 	//box-shadow: #B9B7B7 0px 3px 3px;
 	border: 1px solid $secondaryColorOrange4;
 	position: relative;
-		top:1rem;
+	top:1rem;
 
 	/*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){
-       	width: 60%;
-		height: 70%;
-		margin-top: auto;
+    	width: 60%;
+    	height: 70%;
+    	margin-top: auto;
     }
 
     /*Desktop*/
     @media only screen and (min-width: 1024px){
-       	width: 60%;
-		height: 70%;
-		margin-top: auto;
+    	width: 60%;
+    	height: 70%;
+    	margin-top: auto;
     } 
 
     .txt-align-left{
@@ -71,4 +71,60 @@
     	margin-right: 15%;
     	opacity: .6;
     }
+
+    .header-mini-txt{
+    	opacity: 0;
+    	animation: fadeIn ease-in 1;
+    	animation-fill-mode: forwards;
+    	animation-duration: 3.5s; 
+    }
+    .header-mini-txt.first{
+    	animation-delay: 0.5s; 
+    }
+    .header-mini-txt.second {
+    	animation-delay: 1.5s; 
+    }
+
+    .header-mini-txt1 {
+    	animation-duration: 3s;
+    	animation-name: slidein-left;
+    }
+
+    .header-mini-txt2 {
+    	animation-duration: 5s;
+    	animation-name: slidein-right;
+    }
+}
+
+@keyframes slidein-left {
+	from {
+		margin-left: 100%;
+		width: 300%
+	}
+
+	to {
+		margin-left: 15%;
+		width: 100%;
+	}
+}
+
+@keyframes slidein-right {
+	from {
+		margin-left: 100%;
+		width: 300%
+	}
+
+	to {
+		margin-left: 15%;
+		width: 70%;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0; 
+	}
+	to {
+		opacity: 1; 
+	} 
 }

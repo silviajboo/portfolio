@@ -53,6 +53,10 @@
         height: 0;
 	}
 
+	input.btn-send{
+		text-decoration: none;
+	}
+
 	.input, .textarea{
 		width: 100%;
 		border: 1px solid $secondaryColorOrange4;
@@ -61,7 +65,6 @@
 		font-family: 'Domine', serif;
 	}
 	
-
 	.input{
 		min-height: 2rem;
 	}

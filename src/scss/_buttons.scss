@@ -4,13 +4,14 @@
 	padding: 1rem;
 	max-width: 14rem;
 	min-width: 10rem;
+	transition: .4s ease-in;
 
 	&-projects{
 		background-color: $primaryColorWhite;
 		margin: 3rem auto;
 		width: auto;
 		border: 2px solid $secondaryColorOrange3;
-		transition:         0.08s ease-in;
+		
 	}
 	&-projects:hover{
 		background-color: $secondaryColorOrange2;
