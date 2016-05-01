@@ -29,8 +29,15 @@
 }
 
 #dv-menu-logo-burguer{
-  padding-left: 2rem;
-  padding-top: 1rem;
+  padding-left: 2rem; 
+}
+
+.menu-logo-burguer-scrolled-inactive{
+    padding-top: 1rem; 
+}
+
+.menu-logo-burguer-scrolled-active{
+    padding-top: 0;
 }
 
 #dv-menu-container {
@@ -40,6 +47,11 @@
 }
 
 #dv-menu-container li a:hover{
+  padding-bottom: .5rem;
+  border-bottom: 2px solid $secondaryColorOrange4;
+}
+
+.selected_menu {
   padding-bottom: .5rem;
   border-bottom: 2px solid $secondaryColorOrange2;
 }
@@ -97,7 +109,6 @@
     width: 45px;
     height: 40px;
     position: relative;
-    margin: 20px 10px;
     
     /*MEDIA QUERIES*/
     /*Tablet*/
@@ -109,6 +120,34 @@
     @media only screen and (min-width: 1024px){
         margin: 12px 12px;
     }   
+}
+
+.btn-anim-three-scrolled-inactive{
+    margin: 17px 10px;
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        margin: 25px 12px;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        margin: 25px 12px;
+    } 
+}
+
+.btn-anim-three-scrolled-active{
+    margin: 2px 10px;
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        margin: 12px 12px;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        margin: 12px 12px;
+    } 
 }
 
 .btn-anim-three span{
