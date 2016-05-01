@@ -10,15 +10,15 @@ $('a[href^="#"]').on('click',function (e) {
     });
 
 
+var $about = $('#dv-about-us');
 
-// $('#dv-about-us').waypoint(function(direction) {
-//   $("#dv-menu").addClass("scrolled");
-//   }, {
-//     offset: 116 
-// });
-
-// $('#dv-container').waypoint(function(direction) {
-//   $("#dv-menu").removeClass("scrolled");
-//   }, {
-//     offset: -316 
-// });
+$about.waypoint(function (direction) {
+	if (direction == 'down') {
+		$('#dv-menu').addClass('scrolled-active');
+		$('#dv-menu').removeClass('scrolled-inactive');
+	}
+	else{
+		$('#dv-menu').removeClass('scrolled-active');
+		$('#dv-menu').addClass('scrolled-inactive');
+	}
+});
