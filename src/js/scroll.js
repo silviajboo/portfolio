@@ -50,8 +50,7 @@ $about.waypoint(function (direction) {
         $('.li-projects').removeClass('selected_menu');
         $('.li-contact').removeClass('selected_menu');
     }
-
-});
+},{offset: 1});
 
 $projects.waypoint(function (direction) {
     if (direction == 'down') {
@@ -64,7 +63,7 @@ $projects.waypoint(function (direction) {
         $('.li-projects').removeClass('selected_menu');
         $('.li-contact').removeClass('selected_menu');
     }
-});
+},{offset: 1});
 
 $contact.waypoint(function (direction) {
     if (direction == 'down') {
@@ -77,7 +76,7 @@ $contact.waypoint(function (direction) {
         $('.li-projects').addClass('selected_menu');
         $('.li-contact').removeClass('selected_menu');
     }
-});
+},{offset: 1});
 
 $container.waypoint(function (direction) {
     if (direction == 'down') {
@@ -90,5 +89,5 @@ $container.waypoint(function (direction) {
         $('.li-projects').removeClass('selected_menu');
         $('.li-contact').removeClass('selected_menu');
     }
-});
+},{offset: 1});
 
