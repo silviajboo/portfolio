@@ -31,9 +31,7 @@ $about.waypoint(function (direction) {
         $('#dv-menu-logo-burguer').removeClass('menu-logo-burguer-scrolled-active');
         $('#dv-menu-logo-burguer').addClass('menu-logo-burguer-scrolled-inactive');
     }
-
-    
-});
+},{offset: 1});
 
 var $projects = $('#dv-projects');
 var $contact = $('#dv-contact');
