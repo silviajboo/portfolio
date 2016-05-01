@@ -262,13 +262,26 @@ nav {
   left: 0;
   opacity: 1;
   z-index: 999;
-  margin-bottom: 30rem; }
+  border-bottom: 0.5px solid #F8A69B; }
+
+.scrolled-inactive {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  -webkit-transition: all ease-in 300ms;
+  transition: all ease-in 300ms; }
+
+.scrolled-active {
+  padding-top: 0;
+  padding-bottom: 0;
+  -webkit-transition: all ease-in 300ms;
+  transition: all ease-in 300ms; }
 
 #dv-menu-logo {
   float: left; }
 
 #dv-menu-logo-burguer {
-  padding-left: 1rem; }
+  padding-left: 2rem;
+  padding-top: 1rem; }
 
 #dv-menu-container {
   float: right;
@@ -280,7 +293,7 @@ nav {
 
 .nav-desktop li {
   display: inline-block;
-  padding: 1rem; }
+  padding: 1.5rem 1rem .5rem 1rem; }
 
 /* NAV-MOBILE */
 .nav-mobile {
@@ -307,7 +320,7 @@ nav {
 
 .nav-mobile .nav {
   padding: 0;
-  margin-top: 50px; }
+  margin-top: 2rem; }
 
 .nav-mobile .nav > li {
   list-style: none;
@@ -322,7 +335,7 @@ nav {
   width: 45px;
   height: 40px;
   position: relative;
-  margin: 5px 10px;
+  margin: 20px 10px;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
