@@ -6,12 +6,14 @@ function validateEmail(sEmail) {
         return true;
     else
         return false;
-};
+}
 
 $('form').submit(function(ev){
     ev.preventDefault();
-    var nombre=$('input[name="name"]').val();
+
     var error = false;
+    
+    var nombre=$('input[name="name"]').val();
     if (nombre.length <3 || nombre.length >20){ //incorrecto
         error = true;
         $('input[name="name"]').next().show();
@@ -29,7 +31,7 @@ $('form').submit(function(ev){
         $('input[name="email"]').next().hide();
     }
 
-    ev.preventDefault();
+    
     var asunto=$('input[name="subject"]').val();
     if (asunto.length <4 || asunto.length >50){ //incorrecto
         error = true;
@@ -39,7 +41,7 @@ $('form').submit(function(ev){
         $('input[name="subject"]').next().hide();
     }
 
-    ev.preventDefault();
+    
     var msg=$('textarea[name="user_msg"]').val();
     if (msg.length <10 || msg.length >200){ //incorrecto
         error = true;
