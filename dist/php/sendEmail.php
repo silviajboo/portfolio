@@ -28,7 +28,7 @@ if(isset($_POST['submit'])) {
           <p><strong>Message:</strong> ' . $msg . '</p>
        </body>
        </html>';
-    if (mail('sljboo@gmail.com', 'Private Message', $message, $headers))
+    if (@mail("sljboo@gmail.com", "Private Message", $message, $headers))
         echo 'success';
     else
         echo 'fail';
